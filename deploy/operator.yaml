@@ -15,7 +15,7 @@ spec:
       serviceAccountName: bench-operator
       containers:
         - name: bench-operator
-          image: docker.pkg.github.com/containersolutions-hackaton/bench-operator/operator:0.1
+          image: versus42/contsolhack
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
