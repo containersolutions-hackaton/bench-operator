@@ -63,14 +63,3 @@ spec:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pv-claim
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: mysql-pass
-type: Opaque
-stringData:
-  config.yaml: |-
-    apiUrl: "https://my.api.com/api/v1"
-    username: {{username}}
-    password: {{password}}
