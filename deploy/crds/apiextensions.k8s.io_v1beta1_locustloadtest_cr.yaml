@@ -47,7 +47,7 @@ spec:
   
   master:
     config:
-      target-host: https://site.example.com
+      target-host: http://wordpress-ingress.training.csol.cloud
     resources:
       limits:
         cpu: 100m
@@ -66,7 +66,7 @@ spec:
     config:
   
       # Optional parameter to use an existing configmap instead of deploying one with the Chart
-      # configmapName: locust-worker-configs
+      configmapName: locust-config
   
       # all files from specified configmap (or tasks folder) are mounted under `/locust-tasks`
       locust-script: "/locust-tasks/tasks.py"
