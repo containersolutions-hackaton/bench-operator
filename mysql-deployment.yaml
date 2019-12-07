@@ -67,7 +67,7 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: mysecret
+  name: mysql-pass
 type: Opaque
 stringData:
   config.yaml: |-
